@@ -1,0 +1,177 @@
+/*Imagine pentru background */
+body {
+    background-image: url('simple.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Stilizarea Titlului */
+
+h1{
+    color: aquamarine;
+    font-size: 30px;
+    text-align: center;
+}
+/* Stilizarea imaginilor */
+
+#Crypto { float: right; border: solid 5px crimson; }
+#Hacker { float: left;  border: solid 5px ; color: aqua; }
+
+/* Meniul navbar */
+
+.navbar{
+    list-style: none;
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar > li {
+    border-bottom: solid 2px wheat;
+}
+
+.navbar > li > a {
+    text-decoration: none;
+    color: azure;
+    padding: 12px 24px;
+    display: inline-block;
+    text-align: right;
+    width: 60px;
+}
+
+/*Pentru ecranele mai mari de 600px sa fie stilizarea in tip inline */
+
+@media screen and (min-width: 600px){
+
+    .navbar > li{
+    display: inline-block;
+    border: none;
+    }
+    
+}
+
+/*Elementel eh2 si h3 grupate */
+
+h2,h3{
+
+    color: brown;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+}
+/*Clasa main */
+
+.main{
+    text-align: left;
+    color: black;
+
+}
+
+/*Eelementul aside*/
+
+div>aside{
+
+    font-size: 30px;
+    color: aquamarine;
+    background-color: aliceblue;
+}
+
+/*Stilizarea formularului */
+input:focus{
+    background-color: blanchedalmond;
+}
+
+button:hover{
+    color: beige;
+    background-color: red;
+}
+
+.chapter{
+    font-size: small;
+    color: black;
+    text-align: center;
+
+}
+
+ul > li:first-child{
+    color: aquamarine;
+    font-size: medium;
+}
+
+ul{text-align: left;}
+
+/*Marginile imaginilor */
+
+img{
+    margin: 30px;
+}
+
+/* Elemente de tip inline block */
+
+.btn{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 24px 32px;
+    display: inline-block;
+    font-size: 100px;
+}
+
+/* Stilizarea clasei link */
+
+.link{
+    text-decoration: none;
+    background-color: rgb(10, 247, 247);
+    padding: 12px 6px;
+    display: block;
+}
+
+/* Primul si ultimul element din lista */
+
+.link:first-of-type{
+    margin-bottom: 10px;
+}
+.link:last-of-type{
+    margin-top: 10px;
+}
+
+#concluzie{
+
+    max-width: 200px;
+
+}
+
+/* stilizarea linkurilor */
+
+a:link {color:#2c2828} /* link nevizitat */
+a:visited {color:#f78707} /* link vizitat */
+a:hover {color:#FF00FF} /* link peste care se misca mouse-ul */
+a:active {color:#0000FF} /* link selectat */
+
+/* Descendent  dupa clasa fiind copil direct */
+p > .btn {
+    font-size: 20px;
+}
+
+/* Descendent pentru copil direct */
+.link > a {
+    font-size: 10px;
+    margin: auto;
+}
+
+/* Descendent element dupa clasa */
+
+.chapter p{
+    color: #FF00FF;
+}
+
+/* Descendent clasa dupa element */
+p.chapter{
+    font-size: 20px;
+}
+
+/* Descendent element dupa element */
+p h2{
+    color: aliceblue;
+}
+
